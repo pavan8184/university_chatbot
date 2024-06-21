@@ -1,1 +1,59 @@
-##3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Chatbot</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<a class="navbar-brand" href="#">University</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="/">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/chatbot">Chatbot</a>
+</li>
+</ul>
+</div>
+</nav>
+ 
+<!-- Chatbot Section -->
+<div class="container my-5">
+<div class="row">
+<div class="col-md-6">
+<!-- Chatbot container -->
+<div id="chat-container">
+<h2 class="text-center">c4c Q&A Chatbot</h2>
+<p class="text-center text-muted">Ask me a question!</p>
+<div id="chat-log" class="border rounded p-3">
+<!-- Chat log will be appended here -->
+</div>
+<form id="chat-form">
+<input type="text" id="user-input" class="form-control" placeholder="Ask me a question..." required>
+<button type="submit" id="send-btn" class="btn btn-primary">Send</button>
+</form>
+</div>
+</div>
+<div class="col-md-6">
+<!-- Robot image -->
+<img src="{{ url_for('static', filename='img/robot.png') }}" alt="Robot Image" class="robot-image">
+</div>
+</div>
+</div>
+ 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+<script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+</body>
+</html>
