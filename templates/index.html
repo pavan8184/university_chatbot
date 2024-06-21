@@ -1,1 +1,70 @@
-####
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Chatbot</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<a class="navbar-brand" href="#">University</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="/">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/chatbot">Chatbot</a>
+</li>
+</ul>
+</div>
+</nav>
+ 
+<!-- Header Section -->
+<header class="bg-primary text-white text-center py-5">
+<div class="container">
+<h1>Welcome to the University</h1>
+<p class="lead">Your gateway to knowledge and innovation</p>
+</div>
+</header>
+ 
+<!-- Main Content -->
+<div class="container my-5">
+<div class="row">
+<div class="col-md-8">
+<h2>About Our University</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at lacus ac velit ornare lobortis. Curabitur a felis in nunc fringilla tristique. Sed libero. Vivamus consectetuer hendrerit lacus. Fusce fermentum.</p>
+<p>Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+</div>
+<div class="col-md-4">
+<h2>Contact Us</h2>
+<address>
+<strong>University</strong><br>
+                1234 Street Name<br>
+                City, State, 56789<br>
+<abbr title="Phone">P:</abbr> (123) 456-7890
+</address>
+<address>
+<strong>Email Us</strong><br>
+<a href="mailto:#">info@university.edu</a>
+</address>
+</div>
+</div>
+</div>
+ 
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+<p class="mb-0">© 2024 University. All rights reserved.</p>
+</footer>
+ 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
